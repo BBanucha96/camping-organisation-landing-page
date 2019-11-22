@@ -1,0 +1,220 @@
+@keyframes rotate-needle {
+  0% {
+    transform: rotate(0deg);
+    animation-timing-function: ease-in-out; }
+  40% {
+    transform: rotate(130deg);
+    animation-timing-function: ease-in-out; }
+  75% {
+    transform: rotate(-110deg);
+    animation-timing-function: ease-in-out; }
+  90% {
+    transform: rotate(10deg);
+    animation-timing-function: ease-in-out; }
+  95% {
+    transform: rotate(-5deg);
+    animation-timing-function: ease-in-out; }
+  100% {
+    transform: rotate(0deg);
+    animation-timing-function: ease-in-out; } }
+
+@keyframes rotate-sign {
+  0% {
+    transform: rotateY(0deg); }
+  100% {
+    transform: rotateY(180deg); } }
+
+@keyframes rotate-oar {
+  0% {
+    transform: rotateZ(60deg); }
+  15% {
+    transform: rotateZ(60deg) rotateY(-30deg) rotateX(30deg); }
+  40% {
+    transform: rotateZ(120deg) rotateY(-30deg) rotateX(30deg); }
+  50% {
+    transform: rotateZ(120deg) rotateY(0deg) rotateX(0deg); }
+  60% {
+    transform: rotateZ(120deg) rotateY(30deg) rotateX(30deg); }
+  85% {
+    transform: rotateZ(60deg) rotateY(30deg) rotateX(30deg); }
+  100% {
+    transform: rotateZ(60deg); } }
+
+* {
+  box-sizing: border-box; }
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0; }
+
+body {
+  background-color: #2c0f2b; }
+
+.fas {
+  font-size: 2em;
+  color: #fff8f5;
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  padding-top: 12px;
+  text-align: center;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: transform 0.2s, opacity 0.2s; }
+
+.fas:hover {
+  opacity: 1;
+  transform: scale(1.3);
+  transition: transform 0.2s, opacity 0.2s; }
+
+.wrapper {
+  height: 100vh;
+  perspective: 300px;
+  font-family: "Staatliches", cursive;
+  overflow-x: hidden;
+  position: relative; }
+  .wrapper .intro {
+    height: 100vh;
+    width: 100vw;
+    transform-style: preserve-3d; }
+    .wrapper .intro .intro-element {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      left: 0;
+      height: inherit; }
+    .wrapper .intro .sunlight {
+      background: url("/img/sunlight-s.png") no-repeat center;
+      background-size: cover;
+      transform: translateZ(-600px) scale(3);
+      z-index: -7; }
+    .wrapper .intro .layer-6 {
+      background: url("/img/layer-6s.png") no-repeat center;
+      background-size: cover;
+      transform: translateZ(-400px) scale(2.333);
+      z-index: -6; }
+    .wrapper .intro .layer-5 {
+      background: url("/img/layer-5s.png") no-repeat center;
+      background-size: cover;
+      transform: translateZ(-300px) scale(2);
+      z-index: -5; }
+    .wrapper .intro .layer-4 {
+      background: url("/img/layer-4s.png") no-repeat center;
+      background-size: cover;
+      transform: translateZ(-170px) scale(1.6);
+      z-index: -4; }
+    .wrapper .intro .layer-3 {
+      background: url("/img/layer-3s.png") no-repeat center;
+      background-size: cover;
+      transform: translateZ(-145px) scale(1.5);
+      z-index: -3; }
+    .wrapper .intro .layer-2 {
+      background: url("/img/layer-2s.png") no-repeat center;
+      background-size: cover;
+      transform: translateZ(-110px) scale(1.4);
+      z-index: -2; }
+    .wrapper .intro .layer-1 {
+      background: url("/img/layer-1s.png") no-repeat center;
+      background-size: cover;
+      transform: translateZ(0) scale(1);
+      z-index: -1; }
+    .wrapper .intro .navigation h2 {
+      position: absolute;
+      top: 2%;
+      left: 2%;
+      transform: translate(-2%, -2%);
+      color: #fc7d48;
+      font-size: 1.5em;
+      cursor: pointer; }
+  .wrapper .content-container {
+    box-shadow: 0px -10px 5px 5px #2c0f2b;
+    background: #2c0f2b;
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    height: auto;
+    transform: translateZ(0) scale(1);
+    padding: 20px;
+    display: flex;
+    justify-content: center; }
+    .wrapper .content-container .content-text {
+      display: flex;
+      color: #ff9d48;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      width: 90%;
+      padding-bottom: 20vh;
+      padding-top: 10vh; }
+      .wrapper .content-container .content-text .paragraph {
+        width: 100%;
+        min-width: 300px;
+        transform: translateY(0);
+        opacity: 1;
+        transition: transform 0.25s, opacity 0.25s;
+        display: flex;
+        justify-content: space-around;
+        box-shadow: 5px 9px 15px 5px rgba(0, 0, 0, 0.6);
+        border-radius: 10px;
+        padding: 0 5%;
+        margin-bottom: 25px;
+        background-color: #3f153e; }
+        .wrapper .content-container .content-text .paragraph .par-text {
+          float: left; }
+          .wrapper .content-container .content-text .paragraph .par-text h1 {
+            text-align: center; }
+          .wrapper .content-container .content-text .paragraph .par-text p {
+            text-align: justify; }
+        .wrapper .content-container .content-text .paragraph .icon-container {
+          min-width: 132px;
+          height: 136px;
+          margin: 0 5%;
+          position: relative; }
+          .wrapper .content-container .content-text .paragraph .icon-container .icon-interactive {
+            position: absolute;
+            min-width: 132px;
+            height: 136px;
+            top: 0px;
+            left: 0px; }
+        .wrapper .content-container .content-text .paragraph .compass-logo {
+          background: url("/img/compass.png");
+          top: 50%;
+          transform: translateY(-50%);
+          float: right; }
+          .wrapper .content-container .content-text .paragraph .compass-logo .compass-needle {
+            background: url("/img/compass-needle.png");
+            border-radius: 50%;
+            cursor: pointer; }
+          .wrapper .content-container .content-text .paragraph .compass-logo .compass-needle-animated {
+            animation: rotate-needle 2s; }
+        .wrapper .content-container .content-text .paragraph .sign-logo {
+          background: url("/img/sign.png");
+          top: 50%;
+          transform: translateY(-50%); }
+          .wrapper .content-container .content-text .paragraph .sign-logo .sign-table {
+            background: url("/img/sign-table.png");
+            top: -40px;
+            cursor: pointer; }
+          .wrapper .content-container .content-text .paragraph .sign-logo .sign-table-animated {
+            animation: rotate-sign 2s; }
+        .wrapper .content-container .content-text .paragraph .kayak-logo {
+          background: url("/img/kayak.png");
+          top: 50%;
+          transform: translateY(-50%); }
+          .wrapper .content-container .content-text .paragraph .kayak-logo .kayak-oar {
+            transform: rotateZ(60deg);
+            background: url("/img/kayak-oar-light.png");
+            cursor: pointer; }
+          .wrapper .content-container .content-text .paragraph .kayak-logo .kayak-oar-animated {
+            animation: rotate-oar 2s linear; }
+      .wrapper .content-container .content-text .par-hidden {
+        transform: translateY(100%);
+        opacity: 0;
+        transition: transform 0.25s, opacity 0.25s; }
