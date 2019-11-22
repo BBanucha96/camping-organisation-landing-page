@@ -91,37 +91,37 @@ body {
       left: 0;
       height: inherit; }
     .wrapper .intro .sunlight {
-      background: url("../../img/sunlight-s.png") no-repeat center;
+      background: url("../img/sunlight-s.png") no-repeat center;
       background-size: cover;
       transform: translateZ(-600px) scale(3);
       z-index: -7; }
     .wrapper .intro .layer-6 {
-      background: url("../../img/layer-6s.png") no-repeat center;
+      background: url("../img/layer-6s.png") no-repeat center;
       background-size: cover;
       transform: translateZ(-400px) scale(2.333);
       z-index: -6; }
     .wrapper .intro .layer-5 {
-      background: url("../../img/layer-5s.png") no-repeat center;
+      background: url("../img/layer-5s.png") no-repeat center;
       background-size: cover;
       transform: translateZ(-300px) scale(2);
       z-index: -5; }
     .wrapper .intro .layer-4 {
-      background: url("../../img/layer-4s.png") no-repeat center;
+      background: url("../img/layer-4s.png") no-repeat center;
       background-size: cover;
       transform: translateZ(-170px) scale(1.6);
       z-index: -4; }
     .wrapper .intro .layer-3 {
-      background: url("../../img/layer-3s.png") no-repeat center;
+      background: url("../img/layer-3s.png") no-repeat center;
       background-size: cover;
       transform: translateZ(-145px) scale(1.5);
       z-index: -3; }
     .wrapper .intro .layer-2 {
-      background: url("../../img/layer-2s.png") no-repeat center;
+      background: url("../img/layer-2s.png") no-repeat center;
       background-size: cover;
       transform: translateZ(-110px) scale(1.4);
       z-index: -2; }
     .wrapper .intro .layer-1 {
-      background: url("../../img/layer-1s.png") no-repeat center;
+      background: url("../img/layer-1s.png") no-repeat center;
       background-size: cover;
       transform: translateZ(0) scale(1);
       z-index: -1; }
@@ -184,33 +184,33 @@ body {
             top: 0px;
             left: 0px; }
         .wrapper .content-container .content-text .paragraph .compass-logo {
-          background: url("../../img/compass.png");
+          background: url("../img/compass.png");
           top: 50%;
           transform: translateY(-50%);
           float: right; }
           .wrapper .content-container .content-text .paragraph .compass-logo .compass-needle {
-            background: url("../../img/compass-needle.png");
+            background: url("../img/compass-needle.png");
             border-radius: 50%;
             cursor: pointer; }
           .wrapper .content-container .content-text .paragraph .compass-logo .compass-needle-animated {
             animation: rotate-needle 2s; }
         .wrapper .content-container .content-text .paragraph .sign-logo {
-          background: url("../../img/sign.png");
+          background: url("../img/sign.png");
           top: 50%;
           transform: translateY(-50%); }
           .wrapper .content-container .content-text .paragraph .sign-logo .sign-table {
-            background: url("../../img/sign-table.png");
+            background: url("../img/sign-table.png");
             top: -40px;
             cursor: pointer; }
           .wrapper .content-container .content-text .paragraph .sign-logo .sign-table-animated {
             animation: rotate-sign 2s; }
         .wrapper .content-container .content-text .paragraph .kayak-logo {
-          background: url("../../img/kayak.png");
+          background: url("../img/kayak.png");
           top: 50%;
           transform: translateY(-50%); }
           .wrapper .content-container .content-text .paragraph .kayak-logo .kayak-oar {
             transform: rotateZ(60deg);
-            background: url("../../img/kayak-oar-light.png");
+            background: url("../img/kayak-oar-light.png");
             cursor: pointer; }
           .wrapper .content-container .content-text .paragraph .kayak-logo .kayak-oar-animated {
             animation: rotate-oar 2s linear; }

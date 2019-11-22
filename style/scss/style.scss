@@ -131,49 +131,49 @@ body {
     }
 
     .sunlight {
-      background: url("../../img/sunlight-s.png") no-repeat center;
+      background: url("../img/sunlight-s.png") no-repeat center;
       background-size: cover;
       transform: translateZ(-600px) scale(3);
       z-index: -7;
     }
 
     .layer-6 {
-      background: url("../../img/layer-6s.png") no-repeat center;
+      background: url("../img/layer-6s.png") no-repeat center;
       background-size: cover;
       transform: translateZ(-400px) scale(2.333);
       z-index: -6;
     }
 
     .layer-5 {
-      background: url("../../img/layer-5s.png") no-repeat center;
+      background: url("../img/layer-5s.png") no-repeat center;
       background-size: cover;
       transform: translateZ(-300px) scale(2);
       z-index: -5;
     }
 
     .layer-4 {
-      background: url("../../img/layer-4s.png") no-repeat center;
+      background: url("../img/layer-4s.png") no-repeat center;
       background-size: cover;
       transform: translateZ(-170px) scale(1.6);
       z-index: -4;
     }
 
     .layer-3 {
-      background: url("../../img/layer-3s.png") no-repeat center;
+      background: url("../img/layer-3s.png") no-repeat center;
       background-size: cover;
       transform: translateZ(-145px) scale(1.5);
       z-index: -3;
     }
 
     .layer-2 {
-      background: url("../../img/layer-2s.png") no-repeat center;
+      background: url("../img/layer-2s.png") no-repeat center;
       background-size: cover;
       transform: translateZ(-110px) scale(1.4);
       z-index: -2;
     }
 
     .layer-1 {
-      background: url("../../img/layer-1s.png") no-repeat center;
+      background: url("../img/layer-1s.png") no-repeat center;
       background-size: cover;
       transform: translateZ(0) scale(1);
       z-index: -1;
@@ -254,13 +254,13 @@ body {
         }
 
         .compass-logo {
-          background: url("../../img/compass.png");
+          background: url("../img/compass.png");
           top: 50%;
           transform: translateY(-50%);
           float: right;
 
           .compass-needle {
-            background: url("../../img/compass-needle.png");
+            background: url("../img/compass-needle.png");
             border-radius: 50%;
             cursor: pointer;
           }
@@ -271,12 +271,12 @@ body {
         }
 
         .sign-logo {
-          background: url("../../img/sign.png");
+          background: url("../img/sign.png");
           top: 50%;
           transform: translateY(-50%);
 
           .sign-table {
-            background: url("../../img/sign-table.png");
+            background: url("../img/sign-table.png");
             top: -40px;
             cursor: pointer;
           }
@@ -287,13 +287,13 @@ body {
         }
 
         .kayak-logo {
-          background: url("../../img/kayak.png");
+          background: url("../img/kayak.png");
           top: 50%;
           transform: translateY(-50%);
 
           .kayak-oar {
             transform: rotateZ(60deg);
-            background: url("../../img/kayak-oar-light.png");
+            background: url("../img/kayak-oar-light.png");
             cursor: pointer;
           }
 
