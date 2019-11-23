@@ -41,7 +41,12 @@
     transform: rotateZ(60deg); } }
 
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent; }
+
+*:focus {
+  outline: 0;
+  outline: none; }
 
 html,
 body {
@@ -151,8 +156,8 @@ body {
       align-items: center;
       justify-content: space-between;
       width: 90%;
-      padding-bottom: 20vh;
-      padding-top: 10vh; }
+      padding-bottom: 10vh;
+      padding-top: 5vh; }
       .wrapper .content-container .content-text .paragraph {
         width: 100%;
         min-width: 300px;
@@ -165,29 +170,26 @@ body {
         border-radius: 10px;
         padding: 0 5%;
         margin-bottom: 25px;
-        background-color: #3f153e; }
-        .wrapper .content-container .content-text .paragraph .par-text {
-          float: left; }
-          .wrapper .content-container .content-text .paragraph .par-text h1 {
-            text-align: center; }
-          .wrapper .content-container .content-text .paragraph .par-text p {
-            text-align: justify; }
+        background-color: #3f153e;
+        flex-direction: column; }
+        .wrapper .content-container .content-text .paragraph .par-text h1 {
+          text-align: center; }
+        .wrapper .content-container .content-text .paragraph .par-text p {
+          text-align: justify; }
         .wrapper .content-container .content-text .paragraph .icon-container {
-          min-width: 132px;
+          width: 132px;
           height: 136px;
-          margin: 0 5%;
-          position: relative; }
+          position: relative;
+          margin: 0 auto;
+          margin-bottom: 10px; }
           .wrapper .content-container .content-text .paragraph .icon-container .icon-interactive {
             position: absolute;
-            min-width: 132px;
+            width: 132px;
             height: 136px;
             top: 0px;
             left: 0px; }
         .wrapper .content-container .content-text .paragraph .compass-logo {
-          background: url("../img/compass.png");
-          top: 50%;
-          transform: translateY(-50%);
-          float: right; }
+          background: url("../img/compass.png"); }
           .wrapper .content-container .content-text .paragraph .compass-logo .compass-needle {
             background: url("../img/compass-needle.png");
             border-radius: 50%;
@@ -195,9 +197,7 @@ body {
           .wrapper .content-container .content-text .paragraph .compass-logo .compass-needle-animated {
             animation: rotate-needle 2s; }
         .wrapper .content-container .content-text .paragraph .sign-logo {
-          background: url("../img/sign.png");
-          top: 50%;
-          transform: translateY(-50%); }
+          background: url("../img/sign.png"); }
           .wrapper .content-container .content-text .paragraph .sign-logo .sign-table {
             background: url("../img/sign-table.png");
             top: -40px;
@@ -205,9 +205,7 @@ body {
           .wrapper .content-container .content-text .paragraph .sign-logo .sign-table-animated {
             animation: rotate-sign 2s; }
         .wrapper .content-container .content-text .paragraph .kayak-logo {
-          background: url("../img/kayak.png");
-          top: 50%;
-          transform: translateY(-50%); }
+          background: url("../img/kayak.png"); }
           .wrapper .content-container .content-text .paragraph .kayak-logo .kayak-oar {
             transform: rotateZ(60deg);
             background: url("../img/kayak-oar-light.png");
@@ -218,3 +216,6 @@ body {
         transform: translateY(100%);
         opacity: 0;
         transition: transform 0.25s, opacity 0.25s; }
+    .wrapper .content-container .fa-angle-up {
+      position: absolute;
+      bottom: 1%; }

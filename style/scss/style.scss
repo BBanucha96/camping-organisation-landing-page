@@ -73,6 +73,12 @@ $logo-color: #fc7d48;
 
 * {
   box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+*:focus {
+  outline: 0;
+  outline: none;
 }
 
 html,
@@ -211,8 +217,8 @@ body {
       align-items: center;
       justify-content: space-between;
       width: 90%;
-      padding-bottom: 20vh;
-      padding-top: 10vh;
+      padding-bottom: 10vh;
+      padding-top: 5vh;
 
       .paragraph {
         width: 100%;
@@ -227,9 +233,9 @@ body {
         padding: 0 5%;
         margin-bottom: 25px;
         background-color: lighten($color: $background-color, $amount: 5);
+        flex-direction: column;
 
         .par-text {
-          float: left;
           h1 {
             text-align: center;
           }
@@ -239,14 +245,15 @@ body {
         }
 
         .icon-container {
-          min-width: 132px;
+          width: 132px;
           height: 136px;
-          margin: 0 5%;
           position: relative;
+          margin: 0 auto;
+          margin-bottom: 10px;
 
           .icon-interactive {
             position: absolute;
-            min-width: 132px;
+            width: 132px;
             height: 136px;
             top: 0px;
             left: 0px;
@@ -255,9 +262,6 @@ body {
 
         .compass-logo {
           background: url("../img/compass.png");
-          top: 50%;
-          transform: translateY(-50%);
-          float: right;
 
           .compass-needle {
             background: url("../img/compass-needle.png");
@@ -272,8 +276,6 @@ body {
 
         .sign-logo {
           background: url("../img/sign.png");
-          top: 50%;
-          transform: translateY(-50%);
 
           .sign-table {
             background: url("../img/sign-table.png");
@@ -288,8 +290,6 @@ body {
 
         .kayak-logo {
           background: url("../img/kayak.png");
-          top: 50%;
-          transform: translateY(-50%);
 
           .kayak-oar {
             transform: rotateZ(60deg);
@@ -308,6 +308,11 @@ body {
         opacity: 0;
         transition: transform 0.25s, opacity 0.25s;
       }
+    }
+
+    .fa-angle-up {
+      position: absolute;
+      bottom: 1%;
     }
   }
 }

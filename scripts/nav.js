@@ -9,7 +9,6 @@ const kayakIco = document.querySelector(".kayak-oar");
 
 const icoAnimationTime = 2000;
 
-let winHeight = window.innerHeight;
 let parVisiblity = [false, false, false];
 
 //EVENT LISTENERS
@@ -17,9 +16,7 @@ wrapper.addEventListener("scroll", () => {
   textAnimation();
 });
 
-window.addEventListener("resize", () => {
-  winHeight = window.innerHeight;
-});
+window.addEventListener("resize", () => {});
 
 downBtn.addEventListener("click", () => {
   smoothScroll(".content-container", 2000);
@@ -71,19 +68,19 @@ function smoothScroll(target, duartion) {
 //animate "hop effect" with opacity change on text
 function textAnimation() {
   if (
-    contentCont.getBoundingClientRect().top <= winHeight * 0.75 &&
+    wrapper.scrollTop >= allParagraphs[0].offsetTop + 50 &&
     parVisiblity[0] === false
   ) {
     parVisiblity[0] = true;
     allParagraphs[0].classList.toggle("par-hidden");
   } else if (
-    contentCont.getBoundingClientRect().top <= winHeight * 0.5 &&
+    wrapper.scrollTop >= allParagraphs[1].offsetTop + 50 &&
     parVisiblity[1] === false
   ) {
     parVisiblity[1] = true;
     allParagraphs[1].classList.toggle("par-hidden");
   } else if (
-    contentCont.getBoundingClientRect().top <= winHeight * 0.25 &&
+    wrapper.scrollTop >= allParagraphs[2].offsetTop + 50 &&
     parVisiblity[2] === false
   ) {
     parVisiblity[2] = true;
