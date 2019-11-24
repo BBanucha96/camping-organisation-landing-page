@@ -130,9 +130,8 @@ body {
       z-index: -1; }
     .wrapper .intro .navigation h2 {
       position: absolute;
-      top: 2%;
+      top: -1.5%;
       left: 2%;
-      transform: translate(-2%, -2%);
       color: #fc7d48;
       font-size: 1.5em;
       cursor: pointer; }
