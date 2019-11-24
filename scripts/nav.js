@@ -6,6 +6,16 @@ const contentCont = document.querySelector(".content-container");
 const compassIco = document.querySelector(".compass-needle");
 const signIco = document.querySelector(".sign-table");
 const kayakIco = document.querySelector(".kayak-oar");
+const goDownButton = document.querySelector(".fa-angle-down");
+const goUpButton = document.querySelector(".fa-angle-up");
+
+goDownButton.style.left = window.innerWidth / 2 + "px";
+goDownButton.style.top = window.innerHeight + "px";
+goUpButton.style.left = window.innerWidth / 2 + "px";
+goUpButton.style.bottom = window.innerHeight - wrapper.offsetHeight + "px";
+
+console.log(window.innerHeight);
+console.log(wrapper.offsetHeight);
 
 const icoAnimationTime = 2000;
 
@@ -16,7 +26,12 @@ wrapper.addEventListener("scroll", () => {
   textAnimation();
 });
 
-window.addEventListener("resize", () => {});
+window.addEventListener("resize", () => {
+  goDownButton.style.left = window.innerWidth / 2 + "px";
+  goDownButton.style.top = window.innerHeight + "px";
+  goUpButton.style.left = window.innerWidth / 2 + "px";
+  goUpButton.style.bottom = window.innerHeight - wrapper.offsetHeight + "px";
+});
 
 downBtn.addEventListener("click", () => {
   smoothScroll(".content-container", 2000);
@@ -68,19 +83,19 @@ function smoothScroll(target, duartion) {
 //animate "hop effect" with opacity change on text
 function textAnimation() {
   if (
-    wrapper.scrollTop >= allParagraphs[0].offsetTop + 50 &&
+    wrapper.scrollTop >= allParagraphs[0].offsetTop + 60 &&
     parVisiblity[0] === false
   ) {
     parVisiblity[0] = true;
     allParagraphs[0].classList.toggle("par-hidden");
   } else if (
-    wrapper.scrollTop >= allParagraphs[1].offsetTop + 50 &&
+    wrapper.scrollTop >= allParagraphs[1].offsetTop + 60 &&
     parVisiblity[1] === false
   ) {
     parVisiblity[1] = true;
     allParagraphs[1].classList.toggle("par-hidden");
   } else if (
-    wrapper.scrollTop >= allParagraphs[2].offsetTop + 50 &&
+    wrapper.scrollTop >= allParagraphs[2].offsetTop + 60 &&
     parVisiblity[2] === false
   ) {
     parVisiblity[2] = true;
