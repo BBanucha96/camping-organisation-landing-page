@@ -6,7 +6,7 @@ Responsive website for imaginary company 'Camp inc'.
 
 Website preview: https://bbanucha96.github.io/camping-organisation-landing-page/
 
-![](https://i.imgur.com/ZJfmmbo.png)
+![](https://imgur.com/cMAqZi2)
 
 ## Built with usage of:
 
